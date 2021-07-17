@@ -1,0 +1,2 @@
+Element found	Comparisons: 3
+Element not found	Comparisons: 7
