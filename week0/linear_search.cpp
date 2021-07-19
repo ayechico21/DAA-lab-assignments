@@ -16,11 +16,11 @@ int main(){
     cin>>test;
     while(test--){
         int n,k;
-        cin>>n>>k;
+        cin>>n;
         int arr[n];
         for(int i=0;i<n;i++)
             cin>>arr[i];
-        
+        cin>>k;
         int comparisons =0; //store comparisons
         bool flag=false;
         for(int i=0;i<n;i++){
@@ -31,10 +31,10 @@ int main(){
             }
         }
         if(flag)
-            cout<<"Element found\t";
+            cout<<"Present\t";
         else
-            cout<<"Element not found\t";
-        cout<<"Comparisons: "<<comparisons<<endl;
+            cout<<"Not Present\t";
+        cout<<comparisons<<endl;
     }
     cerr << "time taken : " << (float)clock() / CLOCKS_PER_SEC << " secs" << "\n";
     return 0;
