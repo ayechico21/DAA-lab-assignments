@@ -26,7 +26,7 @@ void dijskstra(int n, int source,  vector<pair<int,int>> adj[]){
         }
     }
     int p;
-    for(int i=1;i<=5;i++){
+    for(int i=1;i<=n;i++){
         p=i;
         while(par[p] != -1){
             cout<<p<<" ";
@@ -49,8 +49,8 @@ int main(){
     cin>>n;
     vector<pair<int,int>> adj[n+1];
     int wt;
-    for(int i=1;i<=5;i++){
-        for(int j=1;j<=5;j++){
+    for(int i=1;i<=n;i++){
+        for(int j=1;j<=n;j++){
             cin>>wt;
             if(wt > 0){
                 adj[i].push_back(make_pair(wt,j));
